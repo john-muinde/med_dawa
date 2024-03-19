@@ -1,0 +1,39 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F4EBE8;
+  /* Use a darker shade of the background color */
+  color: #4A3B37;
+  /* Use a darker shade for the text color */
+}
+
+/* Navbar Styling */
+.sidebar {
+
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+
+/* Main Content Styling */
+.main-content {
+  margin-left: 250px;
+  /* Match the sidebar width to create space for the content */
+  padding: 20px;
+}
+
+/* Sample Usage */
+
+/* process flow styling */
+.process-flow {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: relative;
+}
+
+.process-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
