@@ -4,7 +4,7 @@ include_once 'includes/header.php';
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
   <div class="container">
-    <h1>Welcome to Medilab</h1>
+    <h1>Welcome to MedDawa</h1>
     <h2>We are team of talented designers making websites with Bootstrap</h2>
     <a href="#about" class="btn-get-started scrollto">Get Started</a>
   </div>
@@ -19,11 +19,9 @@ include_once 'includes/header.php';
       <div class="row">
         <div class="col-lg-4 d-flex align-items-stretch">
           <div class="content">
-            <h3>Why Choose Medilab?</h3>
+            <h3>Why Choose MedDawa?</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+              MedDawa is the best medical advisor website on which disease you might be suffering from by just typing the symptoms you have. It also recommends some of the best medicines to purchase these medicines are available for purchase on our website.
             </p>
             <div class="text-center">
               <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
@@ -218,11 +216,11 @@ include_once 'includes/header.php';
   </section><!-- End Symptoms Section -->
 
   <!-- ======= Gallery Section ======= -->
-  <section id="gallery" class="gallery">
+  <section id="products" class="products">
     <div class="container">
 
       <div class="section-title">
-        <h2>Gallery</h2>
+        <h2>Products</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
           consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
           in iste officiis commodi quidem hic quas.</p>
