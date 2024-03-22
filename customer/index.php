@@ -5,7 +5,7 @@ include_once 'includes/header.php';
 <section id="hero" class="d-flex align-items-center">
   <div class="container">
     <h1>Welcome to MedDawa</h1>
-    <h2>We are team of talented designers making websites with Bootstrap</h2>
+    <h2>The No.1 most trusted medical advisory website in the country.</h2>
     <a href="#about" class="btn-get-started scrollto">Get Started</a>
   </div>
 </section><!-- End Hero -->
@@ -34,22 +34,22 @@ include_once 'includes/header.php';
               <div class="col-xl-4 d-flex align-items-stretch">
                 <div class="icon-box mt-4 mt-xl-0">
                   <i class="bx bx-receipt"></i>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <h4>Suppliers</h4>
+                  <p>We get the our medicines from approved and world-renowed pharmaceutical companies to cure your illness.</p>
                 </div>
               </div>
               <div class="col-xl-4 d-flex align-items-stretch">
                 <div class="icon-box mt-4 mt-xl-0">
                   <i class="bx bx-cube-alt"></i>
-                  <h4>Ullamco laboris ladore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <h4>Symptoms</h4>
+                  <p>Get to know which disease you are suffering just by the symptoms you are experiencing.</p>
                 </div>
               </div>
               <div class="col-xl-4 d-flex align-items-stretch">
                 <div class="icon-box mt-4 mt-xl-0">
                   <i class="bx bx-images"></i>
-                  <h4>Labore consequatur</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  <h4>Medicine</h4>
+                  <p>We sell the best and most recommended medicines approved worldwide.</p>
                 </div>
               </div>
             </div>
@@ -71,30 +71,25 @@ include_once 'includes/header.php';
 
         <div
           class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-          <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-          <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus
-            laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla
-            tenetur. Suscipit aut voluptate.</p>
+          <h3>About Us</h3>
+          <p>We offer the best quality and approved medicines by the Government of Kenya for sale. We are well-known for our services and products we offer for sale to our self-esteemed customers. The No.1 most trusted medical advisory website in the country.</p>
 
           <div class="icon-box">
             <div class="icon"><i class="bx bx-fingerprint"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-              occaecati cupiditate non provident</p>
+            <h4 class="title"><a href="">Suppliers</a></h4>
+            <p class="description">We get the our medicines from approved and world-renowed pharmaceutical companies to cure your illness.</p>
           </div>
 
           <div class="icon-box">
             <div class="icon"><i class="bx bx-gift"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-              voluptatum deleniti atque</p>
+            <h4 class="title"><a href="">Symptoms</a></h4>
+            <p class="description">Get to know which disease you are suffering just by the symptoms you are experiencing.</p>
           </div>
 
           <div class="icon-box">
             <div class="icon"><i class="bx bx-atom"></i></div>
-            <h4 class="title"><a href="">Dine Pad</a></h4>
-            <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut
-              deserunt minus aut eligendi omnis</p>
+            <h4 class="title"><a href="">Medicines</a></h4>
+            <p class="description">We sell the best and most recommended medicines approved worldwide.</p>
           </div>
 
         </div>
@@ -114,7 +109,7 @@ include_once 'includes/header.php';
             <i class="fas fa-user-md"></i>
             <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
               class="purecounter"></span>
-            <p>Doctors</p>
+            <p>Suppliers</p>
           </div>
         </div>
 
@@ -123,7 +118,7 @@ include_once 'includes/header.php';
             <i class="far fa-hospital"></i>
             <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
               class="purecounter"></span>
-            <p>Departments</p>
+            <p>Symptoms</p>
           </div>
         </div>
 
@@ -132,7 +127,7 @@ include_once 'includes/header.php';
             <i class="fas fa-flask"></i>
             <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
               class="purecounter"></span>
-            <p>Research Labs</p>
+            <p>Medicines for sale</p>
           </div>
         </div>
 
@@ -141,7 +136,7 @@ include_once 'includes/header.php';
             <i class="fas fa-award"></i>
             <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
               class="purecounter"></span>
-            <p>Awards</p>
+            <p>Reviews</p>
           </div>
         </div>
 
@@ -156,9 +151,7 @@ include_once 'includes/header.php';
 
       <div class="section-title">
         <h2>Symptoms</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
+        <p>Just by the symptoms you are suffering from you can get to know which medicine can cure your illness.</p>
       </div>
 
       <div class="row">
@@ -221,9 +214,7 @@ include_once 'includes/header.php';
 
       <div class="section-title">
         <h2>Products</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
+        <p>We sell the best quality medicinal drugs to our most esteemed customers to help them get well ASAP because your health is the most important thing to us.</p>
       </div>
     </div>
 
