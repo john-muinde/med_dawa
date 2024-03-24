@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 20, 2024 at 07:27 AM
+-- Generation Time: Mar 24, 2024 at 06:09 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -66,27 +66,18 @@ CREATE TABLE `orders` (
 --
 
 CREATE TABLE `product` (
-  `product_id` varchar(30) NOT NULL,
+  `id` int(11) NOT NULL,
   `product_name` varchar(255) NOT NULL,
   `product_price` int(11) NOT NULL,
   `product_offer_price` int(11) DEFAULT NULL,
   `rating` int(11) NOT NULL DEFAULT 0,
   `num_reviews` int(11) NOT NULL DEFAULT 0,
-  `product_tax` float(10,2) DEFAULT NULL,
-  `product_tax_type` enum('percent','amount') NOT NULL DEFAULT 'percent',
   `product_discount` float(10,2) DEFAULT NULL,
-  `product_discount_type` enum('percent','amount') NOT NULL DEFAULT 'percent',
   `product_image` varchar(255) DEFAULT NULL,
   `product_description` text DEFAULT NULL,
-  `product_short_description` text DEFAULT NULL,
   `product_quantity` int(11) NOT NULL,
-  `product_group` enum('featured','no') NOT NULL DEFAULT 'no',
-  `tag_id` varchar(30) DEFAULT NULL,
   `category_id` varchar(30) NOT NULL,
-  `subcategory_id` varchar(30) DEFAULT NULL,
-  `brand_id` varchar(30) DEFAULT NULL,
   `product_in_stock` enum('yes','no') NOT NULL,
-  `unit_id` varchar(30) DEFAULT NULL,
   `product_capacity` varchar(255) DEFAULT NULL,
   `product_date_created` datetime NOT NULL DEFAULT current_timestamp(),
   `product_status` enum('active','inactive') NOT NULL DEFAULT 'active',
@@ -133,7 +124,7 @@ ALTER TABLE `orders`
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
-  ADD PRIMARY KEY (`product_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -149,6 +140,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
