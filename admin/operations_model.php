@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 define('admin_url', 'includes/operations.php?action=');
 
 define('delete_url', 'includes/delete.php?id=');
-define('file_url', 'http://localhost:3000/uploads/');
+define('file_url', 'http://localhost:5000/uploads/');
 define('placeholder', file_url . 'placeholder.png');
 
 require 'database.php';
@@ -71,6 +71,19 @@ function insert_rows($table_name, $data)
 
     $conn->close();
     return $success;
+}
+
+function delete_row($table, $id, $id_name = "id")
+{
+    $conn = connect();
+    $sql = "DELETE FROM $table WHERE $id_name = '$id'";
+    $result = mysqli_query($conn, $sql);
+
+    if ($result) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 

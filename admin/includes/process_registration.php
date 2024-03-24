@@ -86,6 +86,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         displayNotification("Registration successful. ", "success");
 
         // Redirect to dashboard or desired page
-        redirect($redirect_url);
+        redirect('../index.php');
     }
 }

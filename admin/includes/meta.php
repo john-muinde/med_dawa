@@ -84,25 +84,25 @@
         }, 300000);
     }
 
-    document.addEventListener("mousemove", () => {
-        clearTimeout(timeout);
-        startSessionTimeout();
-    });
+    // document.addEventListener("mousemove", () => {
+    //     clearTimeout(timeout);
+    //     startSessionTimeout();
+    // });
 
-    $("#extendSessionBtn").click(() => {
-        hidePopup();
-        startSessionTimeout();
-    });
+    // $("#extendSessionBtn").click(() => {
+    //     hidePopup();
+    //     startSessionTimeout();
+    // });
 
-    $("#logoutBtn").click(() => {
-        logout();
-    });
+    // $("#logoutBtn").click(() => {
+    //     logout();
+    // });
 
-    startSessionTimeout();
+    // startSessionTimeout();
 
-    $("#logoutBtn").click(() => {
-        logout();
-    });
+    // $("#logoutBtn").click(() => {
+    //     logout();
+    // });
 
-    startSessionTimeout();
+    // startSessionTimeout();
 </script>

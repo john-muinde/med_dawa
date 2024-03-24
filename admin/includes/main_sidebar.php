@@ -107,12 +107,12 @@ require_once 'api_auth.php';
           </li>
         <?php endforeach; ?>
 
-        <li class="nav-item <?= ($currentUrl === 'reset_password.php') ? 'active' : '' ?>">
+        <!-- <li class="nav-item <?= ($currentUrl === 'reset_password.php') ? 'active' : '' ?>">
           <a href="reset_password.php" class="nav-link">
             <i class="nav-icon fas fa-user"></i>
             <p>Reset Password</p>
           </a>
-        </li>
+        </li> -->
 
         <li class="nav-item">
           <a href="includes/logout_inc.php" class="nav-link">

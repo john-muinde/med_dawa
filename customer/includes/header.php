@@ -1,3 +1,6 @@
+<?php
+include 'operations.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +8,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Medilab Bootstrap Template - Index</title>
+  <title>Meddawa - Online Pharmacy</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -25,6 +24,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -37,7 +37,7 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">MedDawa@gmail.com</a>
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">meddawa@gmail.com</a>
         <i class="bi bi-phone"></i> +254 763 129 837
       </div>
       <div class="d-none d-lg-flex social-links align-items-center">

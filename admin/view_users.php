@@ -1,9 +1,27 @@
 <?php
 $page = 'View Users';
 include 'header.php';
-$users = select_rows('SELECT * FROM users');
-?>
 
+// Define a whitelist of allowed parameters
+$allowed_params = ['username', 'email', 'role', 'status'];
+
+// Get any conditions from the GET parameters
+$conditions = [];
+$conn = connect();
+foreach ($_GET as $key => $value) {
+    if (in_array($key, $allowed_params)) {
+        $conditions[] = $key . " = '" . mysqli_real_escape_string($conn, $value) . "'";
+    }
+}
+
+// Create WHERE clause if there are any conditions
+$where_clause = '';
+if (!empty($conditions)) {
+    $where_clause = ' WHERE ' . implode(' AND ', $conditions);
+}
+
+$users = select_rows('SELECT * FROM users' . $where_clause);
+?>
 <div class="content-wrapper">
     <div class="container">
         <h3 class="p3">All Users</h3>
@@ -105,10 +123,9 @@ $users = select_rows('SELECT * FROM users');
                                 </td>
                                 <td>
                                     <a class="btn btn-primary p-1" href="add_user.php?id=<?= $user['id'] ?>">Edit</a>
-                                    <a href="includes/deleted.php?id=<?= $user['id'] ?>&page=<?= 'users' ?>&method=users" class="btn btn-danger">
+                                    <a href="<?= admin_url; ?>delete<?= '&id=' . $user['id'] . '&table=users&page=view_users.php' ?>" class="btn btn-danger">
                                         <i class="fas fa-trash"></i>
                                     </a>
-
                                 </td>
                             </tr>
                         <?php $cnt++;

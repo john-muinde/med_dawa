@@ -1,7 +1,26 @@
 <?php
 $page = 'View Users';
 include 'header.php';
-$categories = select_rows('SELECT * FROM category');
+
+// Define a whitelist of allowed parameters
+$allowed_params = ['category_name', 'category_id'];
+
+// Get any conditions from the GET parameters
+$conditions = [];
+$conn = connect();
+foreach ($_GET as $key => $value) {
+    if (in_array($key, $allowed_params)) {
+        $conditions[] = $key . " = '" . mysqli_real_escape_string($conn, $value) . "'";
+    }
+}
+
+// Create WHERE clause if there are any conditions
+$where_clause = '';
+if (!empty($conditions)) {
+    $where_clause = ' WHERE ' . implode(' AND ', $conditions);
+}
+
+$categories = select_rows('SELECT * FROM category' . $where_clause);
 ?>
 <div class="content-wrapper">
     <div class="container">
@@ -39,9 +58,11 @@ $categories = select_rows('SELECT * FROM category');
                                     <a href="add_category.php?id=<?= $category_id ?>" class="btn btn-success">
                                         <i class="fas fa-pen"></i>
                                     </a>
-                                    <a href="<?= delete_url . $category_id ?>&table=category&page=view_categoriesmethod=category" class="btn btn-danger">
+
+                                    <a href="<?= admin_url; ?>delete<?= '&id=' . $category_id . '&table=category&page=view_categories.php' ?>" class="btn btn-danger">
                                         <i class="fas fa-trash"></i>
                                     </a>
+
                                 </td>
                             </tr>
                         <?php $cnt++;

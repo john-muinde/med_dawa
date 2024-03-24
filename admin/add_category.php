@@ -59,17 +59,6 @@ if ($edit) {
                                 width: 40vw;
                                 " />
                             </div>
-
-                            <script>
-                                function previewImage(event) {
-                                    var reader = new FileReader();
-                                    reader.onload = function() {
-                                        var output = document.getElementById('img_loader');
-                                        output.src = reader.result;
-                                    }
-                                    reader.readAsDataURL(event.target.files[0]);
-                                }
-                            </script>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                             <!-- Submit Button -->
@@ -81,3 +70,5 @@ if ($edit) {
         </section>
     </div>
 </div>
+
+<?php include 'footer.php'; ?>

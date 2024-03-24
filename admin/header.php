@@ -20,3 +20,13 @@ require_once 'operations_model.php';
     <div class="wrapper">
         <?php include "includes/nav.php"; ?>
         <?php include "includes/main_sidebar.php"; ?>
+        <script>
+            function previewImage(event) {
+                var reader = new FileReader();
+                reader.onload = function() {
+                    var output = document.getElementById('img_loader');
+                    output.src = reader.result;
+                }
+                reader.readAsDataURL(event.target.files[0]);
+            }
+        </script>
