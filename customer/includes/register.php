@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Adoption</title>
+    <title>MedDawa Registration</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -100,7 +100,7 @@
         </form>
 
         <div class="switch-form">
-            <p>Already have an account? <a href="#">Log in here</a></p>
+            <p>Already have an account? <a href="login.php">Log in here</a></p>
         </div>
     </div>
 

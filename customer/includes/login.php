@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Adoption</title>
+    <title>MedDawa Login</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="container">
         <h2>Login</h2>
         <form action="" method="post">
-            <label for="username">Email</label>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
 
             <label for="password">Password</label>
@@ -134,7 +134,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ?>
 
         <div class="switch-form">
-            <p>Don't have an account? <a href="#">Register here</a></p>
+            <p>Don't have an account? <a href="register.php">Register here</a></p>
         </div>
     </div>
 </body>
