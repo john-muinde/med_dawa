@@ -103,12 +103,12 @@ include_once 'includes/header.php';
   </section><!-- End Counts Section -->
 
   <!-- ======= Symptoms Section ======= -->
-  <section id="symptoms" class="symptoms">
+  <section id="products" class="products">
     <div class="container">
 
       <div class="section-title">
-        <h2>Symptoms</h2>
-        <p>Just by the symptoms you are suffering from you can get to know which medicine can cure your illness.</p>
+        <h2>Products</h2>
+        <p>We sell the best and most recommended medicines approved worldwide.</p>
       </div>
 
       <div class="row d-flex align-items-center justify-content-center">

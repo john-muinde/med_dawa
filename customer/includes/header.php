@@ -61,14 +61,16 @@ include 'operations.php';
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#symptoms">Symptoms</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#symptoms">Symptoms</a></li> -->
           <li><a class="nav-link scrollto" href="#products">Products</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Login</a>
+      <a href="includes/login.php" class="appointment-btn scrollto"><span class="d-none d-md-inline">Login</a>
+      <a href="includes/register.php" class="appointment-btn scrollto"><span class="d-none d-md-inline">Register</a>
+
 
     </div>
   </header><!-- End Header -->
